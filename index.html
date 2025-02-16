@@ -221,6 +221,58 @@
             color: var(--text-gray);
             font-weight: bold;
         }
+
+        /* General styles for sections */
+        .menu-section {
+            position: relative;
+            padding-top: 30px;
+            margin-top: 60px;
+            /* Adjust this value to give space for the background image */
+        }
+
+        /* Background images for each section */
+        .pizza-section {
+            background-image: url('pizza-slices.png');
+            background-position: top right;
+            background-repeat: no-repeat;
+            background-size: 100px;
+            /* Adjust the size as needed */
+        }
+
+        .burger-section {
+            background-image: url('burger.png');
+            background-position: top right;
+            background-repeat: no-repeat;
+            background-size: 100px;
+            /* Adjust the size as needed */
+        }
+
+        .snacks-section {
+            background-image: url('frites.png');
+            background-position: top right;
+            background-repeat: no-repeat;
+            background-size: 100px;
+            /* Adjust the size as needed */
+        }
+
+        .desserts-section {
+            background-image: url('pizza-bread.png');
+            background-position: top right;
+            background-repeat: no-repeat;
+            background-size: 100px;
+            /* Adjust the size as needed */
+        }
+
+        .drinks-section {
+            background-image: url('canette-coca.png');
+            background-position: top right;
+            background-repeat: no-repeat;
+            background-size: 50px;
+            margin-top: 20px;
+            /* Adjust the size as needed */
+        }
+
+    
     </style>
 
 
@@ -252,27 +304,25 @@
 
             </div>
         </div>
-        
+
     </header>
 
     <main class="container">
 
-        <div class="minimum-order"
-        style="text-align: center; font-weight: bold;">
+        <div class="minimum-order" style="text-align: center; font-weight: bold;">
             FREE DELIVERY
             <br>
             MINIMUM AMOUNT 20€
         </div>
 
-        <div class="minimum-order"
-        style="text-align: center; font-weight: bold;">
-        <img class="logo-img" src="logo.png" alt="logo">
+        <div class="minimum-order" style="text-align: center; font-weight: bold;">
+            <img class="logo-img" src="logo.png" alt="logo">
         </div>
 
-        
+
 
         <div class="phone-number">
-            
+
             <div>
                 TO ORDER<br>
                 06 17 20 46 00
@@ -292,7 +342,7 @@
         </div>
 
 
-        <section class="menu-section">
+        <section class="menu-section pizza-section">
             <h2>Pizza</h2>
             <div class="sub-section-tomate">
                 <h3>Tomato Base</h3>
@@ -336,13 +386,14 @@
                 </div>
             </div>
             <div class="sub-section-sup">
-                <h4>Supplements <span class="item-price">2,00€</span></h4>
-                <div class="item-description">Ham, Chorizo, Bacon, Onions, Egg, Potato, Peppers, Mushrooms, Roquefort,
-                    Goat cheese, Honey, Raclette, Spicy Chicken</div>
-            </div>
+                <div class="item">
+                  <div class="item-name">Supplements <span class="item-price">2,00€</span></div>
+                  <div class="item-description">Ham, Chorizo, Bacon, Onions, Egg, Potato, Peppers, Mushrooms, Roquefort, Goat cheese, Honey, Raclette, Spicy Chicken</div>
+                </div>
+              </div>
         </section>
 
-        <section class="menu-section">
+        <section class="menu-section burger-section">
             <h2>Burgers</h2>
             <div class="item">
                 <div class="item-name">Le Savoyard <span class="item-price">12,00€</span></div>
@@ -369,7 +420,7 @@
             </div>
         </section>
 
-        <section class="menu-section">
+        <section class="menu-section snacks-section">
             <h2>Snacks</h2>
             <div class="item">
                 <div class="item-name">French Fries <span class="item-price">6,00€</span></div>
@@ -398,7 +449,7 @@
             </div>
         </section>
 
-        <section class="menu-section">
+        <section class="menu-section desserts-section">
             <h2>Desserts</h2>
             <div class="item">
                 <div class="item-name">Chocolate Fondant <span class="item-price">5,50€</span></div>
@@ -426,7 +477,7 @@
             </div>
         </section>
 
-        <section class="menu-section">
+        <section class="menu-section drinks-section">
             <h2>Drinks</h2>
             <div class="item">
                 <div class="item-name2">Can 33cl <span class="item-price">3,50€</span></div>
@@ -452,18 +503,10 @@
     </main>
 
     <footer>
-        <div class="social-links delivery-info">
-            <p style="margin-top: 30px; font-size: large;"><strong>Call us at: 0617204600</strong></p>
+        <div class="delivery-info">
+            <p class="phone-number"><strong>Call us at: 0617204600</strong></p>
+            <p class="disclaimer">L'ALCOOL EST DANGEREUX POUR LA SANTE A CONSOMMER AVEC MODERATION</p>
         </div>
-        <div class="social-links delivery-info">
-            
-            <p>Ne pas jeter sur la voie publique
-            </p>
-            <p>
-                L’ALCOOL ET DANGEREUX POUR LA SANTE A CONSOMMER AVEC MODERATION</p>
-                </div>
     </footer>
-
 </body>
-
 </html>
